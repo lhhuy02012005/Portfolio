@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Software & AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="container">
+            <aside class="sidebar">
+                <h1 class="name">Lê Hữu Huy</h1>
+                <div class="profile-pic">
+                    <img src="avatar.jpg" alt="Profile Picture">
+                </div>
+                <nav class="social-links">
+                    <a href="#" target="_blank">Resume</a> | 
+                    <a href="#" target="_blank">LinkedIn</a> | 
+                    <a href="https://github.com/lhhuy02012005" target="_blank">GitHub</a>
+                </nav>
+                <div class="bio">
+                    <p>I am a <strong>Software Engineer</strong> specializing in building scalable web applications and exploring <strong>Generative AI</strong>.</p>
+                    <p>Currently focusing on <strong>RAG (Retrieval-Augmented Generation)</strong> systems using Python, LangChain, and Vector Databases to build private AI solutions.</p>
+                </div>
+            </aside>
+
+            <main class="content">
+                <h2 class="section-title">Portfolio</h2>
+                <hr>
+
+                <section class="project-group">
+                    <h3>Artificial Intelligence & NLP</h3>
+                    <div class="project-item">
+                        <h4>Local-first RAG Pipeline with Python & Ollama</h4>
+                        <p>Developed a high-performance <strong>Retrieval-Augmented Generation (RAG)</strong> system focused on data sovereignty. This project enables intelligent Q&A over private document repositories (PDF, Docx) without relying on cloud-based LLM providers.</p>
+                        
+                        <div class="badge-container">
+                            <a href="https://github.com/lhhuy02012005/RAG.git" target="_blank" rel="noopener noreferrer" class="github-badge">
+                                View on GitHub
+                            </a>
+                        </div>
+
+                        <ul class="project-details">
+                            <li><strong>Orchestration:</strong> Built with <strong>LangChain</strong> to handle complex document chunking and retrieval chains.</li>
+                            <li><strong>Vector Database:</strong> Integrated <strong>ChromaDB</strong> for high-dimensional vector storage and semantic search.</li>
+                            <li><strong>Inference:</strong> Optimized local execution of <strong>Llama 3</strong> via <strong>Ollama</strong>, achieving low-latency responses.</li>
+                        </ul>
+                        
+                        <div class="project-image">
+                            <img src="RAG.gif" alt="RAG Architecture Diagram">
+                            
+                            <p class="image-caption">Figure 1: End-to-end RAG workflow from document ingestion to local LLM response.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-group">
+                    <h3>Full-stack Development</h3>
+                    <div class="project-item">
+                        <h4>ShopZues - Scalable E-commerce Platform</h4>
+                        <p>A comprehensive enterprise-grade e-commerce solution built with <strong>Laravel 10</strong>. The system handles complex business logic, from multi-variant inventory management to automated financial reconciliation.</p>
+                        
+                        <div class="badge-container">
+                            <a href="https://github.com/lhhuy02012005/Ecomerce.git" target="_blank" rel="noopener noreferrer" class="github-badge">
+                                View on GitHub
+                            </a>
+                        </div>
+
+                        <ul class="project-details">
+                            <li><strong>Infrastructure:</strong> Leveraged <strong>Redis</strong> for session management, caching, and background job queues.</li>
+                            <li><strong>Integrations:</strong> Real-time payment via <strong>VNPAY</strong> and automated shipping with <strong>Giao Hàng Nhanh (GHN)</strong>.</li>
+                            <li><strong>Cloud Services:</strong> Implemented <strong>Cloudinary</strong> for media and <strong>Brevo</strong> for SMTP/SMS notifications.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <h4>HRM & Internal Management System</h4>
+                        <p>A specialized Internal Tool focused on optimizing human resource workflows, shift automation (Administrative/Morning/Afternoon), and Role-Based Access Control (RBAC).</p>
+                    </div>
+                </section>
+
+                <footer>
+                    <p>© 2026 Lê Hoàng Huy. Powered by Code & Coffee.</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* Reset & Cơ bản */
+* { box-sizing: border-box; }
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #fff;
+}
+
+/* Container chính */
+.main-wrapper {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.container {
+    display: flex;
+    gap: 80px;
+}
+
+/* Sidebar (Cột trái) */
+.sidebar {
+    flex: 1;
+    text-align: left;
+    position: sticky;
+    top: 60px;
+    height: fit-content;
+}
+
+.name {
+    color: #2e7bb6;
+    font-size: 32px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 230px;
+    height: 230px;
+    margin: 0 auto 25px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+.social-links {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #2e7bb6;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.bio p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Content (Cột phải) */
+.content { flex: 2; }
+.section-title { font-size: 32px; color: #333; margin: 0; }
+hr { border: 0; border-top: 1px solid #eeeeee; margin: 10px 0 40px 0; }
+h3 { font-size: 24px; color: #333; margin-bottom: 20px; border-bottom: 1px solid #f9f9f9; padding-bottom: 5px; }
+h4 { font-size: 19px; color: #222; margin-bottom: 10px; }
+
+.project-item { margin-bottom: 50px; }
+.project-item p { font-size: 16px; margin-bottom: 15px; }
+
+/* Danh sách chi tiết */
+.project-details {
+    font-size: 14.5px;
+    padding-left: 20px;
+    color: #666;
+}
+.project-details li { margin-bottom: 8px; }
+
+/* Badge GitHub */
+.badge-container { margin: 15px 0; }
+.github-badge {
+    background-color: #4183c4;
+    color: white !important;
+    padding: 5px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+}
+.github-badge:hover { background-color: #2e6da4; }
+
+/* Hình ảnh dự án */
+.project-image { margin: 25px 0; width: 100%; }
+.project-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+.image-caption {
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 850px) {
+    .container { flex-direction: column; gap: 40px; }
+    .sidebar { position: static; }
+    .main-wrapper { margin: 20px auto; padding: 0 20px; }
+}
