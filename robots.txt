@@ -1,14 +1,13 @@
-# Robots.txt for SEO optimization
+# Robots.txt for GitHub Pages - SEO optimization
 # Allow all search engine bots to crawl
 
 User-agent: *
 Allow: /
-Disallow: /private/
 
-# Sitemap location
-Sitemap: https://lhthang-portfolio.com/sitemap.xml
+# Sitemap location (GitHub Pages)
+Sitemap: https://lhhuy02012005.github.io/Portfolio/sitemap.xml
 
-# Crawl delay (optional - removes if not needed)
+# Crawl delay (optional)
 Crawl-delay: 1
 
 # Specific search engines

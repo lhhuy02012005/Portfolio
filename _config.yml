@@ -1,0 +1,65 @@
+# Jekyll Configuration for GitHub Pages
+# GitHub Pages uses Jekyll to build static sites
+
+# Site Settings
+title: Lê Hữu Huy - Software & AI Engineer
+description: "Portfolio showcasing AI projects (RAG pipelines), full-stack development, and generative AI expertise"
+author: Lê Hữu Huy
+email: your-email@example.com
+
+# GitHub Pages Configuration
+url: https://lhhuy02012005.github.io
+baseurl: /Portfolio
+
+# Build Settings
+markdown: kramdown
+theme: jekyll-theme-minimal
+
+# Plugins for SEO and GitHub Pages
+plugins:
+  - jekyll-sitemap          # Automatically generates sitemap.xml
+  - jekyll-seo-tag          # Adds SEO meta tags automatically
+  - jekyll-feed             # Generates RSS feed for blog posts
+  - jemoji                  # Adds emoji support
+
+# Exclude files from being built
+exclude:
+  - README.md
+  - .DS_Store
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - node_modules
+  - vendor
+
+# Include files that should be processed
+include:
+  - .well-known
+
+# Post Settings
+permalink: /blog/:year/:month/:day/:title/
+paginate: 10
+paginate_path: /blog/page:num/
+
+# Collections (if needed for future blog posts)
+collections:
+  projects:
+    output: false
+
+# Compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+# Safe mode (GitHub Pages uses safe mode)
+safe: true
+
+# GitHub Pages specific settings
+github: [metadata]
+lsi: false
+incremental: false

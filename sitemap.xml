@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>https://lhthang-portfolio.com/</loc>
-        <lastmod>2026-03-24</lastmod>
+        <loc>{{ site.url }}{{ site.baseurl }}/</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://lhthang-portfolio.com/avatar.jpg</image:loc>
+            <image:loc>{{ site.url }}{{ site.baseurl }}/avatar.jpg</image:loc>
             <image:title>Lê Hữu Huy Profile Picture</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://lhthang-portfolio.com/RAG.gif</image:loc>
+            <image:loc>{{ site.url }}{{ site.baseurl }}/RAG.gif</image:loc>
             <image:title>NexusRAG Workflow Demonstration</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://lhthang-portfolio.com/nexusrag-architecture.svg</image:loc>
+            <image:loc>{{ site.url }}{{ site.baseurl }}/nexusrag-architecture.svg</image:loc>
             <image:title>NexusRAG System Architecture Diagram</image:title>
         </image:image>
     </url>
