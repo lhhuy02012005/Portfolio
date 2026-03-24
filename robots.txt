@@ -1,0 +1,22 @@
+# Robots.txt for SEO optimization
+# Allow all search engine bots to crawl
+
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://lhthang-portfolio.com/sitemap.xml
+
+# Crawl delay (optional - removes if not needed)
+Crawl-delay: 1
+
+# Specific search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
